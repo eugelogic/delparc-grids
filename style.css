@@ -73,7 +73,7 @@ h2 {
 }
 .container {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
+  grid-template-columns: repeat(12, 1fr);
 }
 .logo-tile {
   grid-column: 1 / -1;
@@ -81,11 +81,11 @@ h2 {
   height: 120px
 }
 .nav-menu-tile {
-  grid-column: 10 / 11;
+  grid-column: 12 / 13;
   grid-row: 1 / 2;
 }
 .hero-tile {
-  grid-column: 1 / 8;
+  grid-column: 1 / 9;
   height: 480px;
   background-image: url("./assets/images/dummy.jpg");
   background-repeat:no-repeat;
@@ -97,14 +97,14 @@ h2 {
   align-self: end;
 }
 .info-tile {
-  grid-column: 8 / -1;
+  grid-column: 9 / -1;
   height: 480px;
 }
 .info-tile h2, .info-tile p {
   text-align: center;
 }
 .drinks-tile {
-  grid-column: 1 / 3;
+  grid-column: 1 / 4;
   height: 480px;
   text-align: center;
   background: url("./assets/images/drinks.jpg");
@@ -122,14 +122,14 @@ h2 {
   color: white;
 }
 .about-tile {
-  grid-column: 3 / 7;
+  grid-column: 4 / 10;
   height: 480px;
 }
 .about-tile p {
   padding: 2em;
 }
 .menus-tile {
-  grid-column: 7 / -1;
+  grid-column: 10 / -1;
   height: 480px;
   text-align: center;
 }
@@ -138,7 +138,7 @@ h2 {
   height: 480px;
 }
 .bar-tile {
-  grid-column: 1 / 6;
+  grid-column: 1 / 7;
   height: 480px;
   background: url("./assets/images/barnight.jpg");
   background-repeat:no-repeat;
@@ -147,7 +147,7 @@ h2 {
   color: white;
 }
 .club-tile {
-  grid-column: 6 / -1;
+  grid-column: 7 / -1;
   height: 480px;
   background: url("./assets/images/supperclub.jpg");
   background-repeat:no-repeat;
@@ -160,11 +160,11 @@ h2 {
   height: 480px;
 }
 .catering-tile {
-  grid-column: 1 / 6;
+  grid-column: 1 / 7;
   height: 480px;
 }
 .form-tile {
-  grid-column: 6 / -1;
+  grid-column: 7 / -1;
   height: 480px;
 }
 .footer {
