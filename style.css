@@ -1,7 +1,7 @@
 /*
 
   This file needs some serious tidying up
-  
+
 */
 :root {
   --yellow: #ffc600;
@@ -52,7 +52,7 @@ h6 {
   margin: 0 0 5px 0;
 }
 /* Each item in our grid will contain numbers */
-.item {
+.tile {
   /* We center the contents of these items. You can also do this with flexbox too! */
   display: grid;
   justify-content: center;
@@ -63,7 +63,7 @@ h6 {
   /* background-color: var(--yellow); /* best colour */
 }
 
-.item p {
+.tile p {
   margin: 0 0 5px 0;
 }
 
@@ -75,16 +75,16 @@ h2 {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
 }
-.item1 {
+.logo-tile {
   grid-column: 1 / -1;
   grid-row: 1 / 2;
   height: 120px
 }
-.item2 {
+.nav-menu-tile {
   grid-column: 10 / 11;
   grid-row: 1 / 2;
 }
-.item3 {
+.hero-tile {
   grid-column: 1 / 8;
   height: 480px;
   background-image: url("./assets/images/dummy.jpg");
@@ -92,18 +92,18 @@ h2 {
   background-size:cover;
   color: white;
 }
-.item3 h1 {
+.hero-tile h1 {
   font-size: 1.5em;
   align-self: end;
 }
-.item4 {
+.info-tile {
   grid-column: 8 / -1;
   height: 480px;
 }
-.item4 h2, .item4 p {
+.info-tile h2, .info-tile p {
   text-align: center;
 }
-.item5 {
+.drinks-tile {
   grid-column: 1 / 3;
   height: 480px;
   text-align: center;
@@ -115,29 +115,29 @@ h2 {
   opacity: 0.75;
   filter: contrast(200%);
 }
-.item5 h2 {
+.drinks-tile h2 {
   align-self: end;
 }
-.item5 a {
+.drinks-tile a {
   color: white;
 }
-.item6 {
+.about-tile {
   grid-column: 3 / 7;
   height: 480px;
 }
-.item6 p {
+.about-tile p {
   padding: 2em;
 }
-.item7 {
+.menus-tile {
   grid-column: 7 / -1;
   height: 480px;
   text-align: center;
 }
-.item8 {
+.shop-tile {
   grid-column: 1 / -1;
   height: 480px;
 }
-.item9 {
+.bar-tile {
   grid-column: 1 / 6;
   height: 480px;
   background: url("./assets/images/barnight.jpg");
@@ -146,7 +146,7 @@ h2 {
   background-position:center center;
   color: white;
 }
-.item10 {
+.club-tile {
   grid-column: 6 / -1;
   height: 480px;
   background: url("./assets/images/supperclub.jpg");
@@ -155,15 +155,15 @@ h2 {
   background-position:center center;
   color: white;
 }
-.item11 {
+.gallery-tile {
   grid-column: 1 / -1;
   height: 480px;
 }
-.item12 {
+.catering-tile {
   grid-column: 1 / 6;
   height: 480px;
 }
-.item13 {
+.form-tile {
   grid-column: 6 / -1;
   height: 480px;
 }
