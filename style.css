@@ -38,6 +38,15 @@ h6 {
 
 h2 {
   font-size: 1em;
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: red;
 }
 
 .tile {
@@ -102,18 +111,9 @@ h2 {
   background-repeat:no-repeat;
   background-size:cover;
   background-position:center center;
-  color: white;
   /* testing out some css filters */
   opacity: 0.75;
   filter: contrast(200%);
-}
-
-.drinks-tile h2 {
-  align-self: end;
-}
-
-.drinks-tile a {
-  color: white;
 }
 
 .about-tile {
