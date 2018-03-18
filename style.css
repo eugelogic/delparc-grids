@@ -1,28 +1,15 @@
-/*
-
-  This file needs some serious tidying up
-
-*/
-:root {
-  --yellow: #ffc600;
-  --black: #272727;
-}
-
 html {
   /* border-box box model allows us to add padding and border to our elements without increasing their size */
   box-sizing: border-box;
+
   /* A system font stack so things load nice and quick! */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
     Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: 700;
   font-size: 10px;
-  color: var(--black);
-  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+  color: #323232;
 }
 
-p {
-  font-size: 18px;
-}
 /*
   WAT IS THIS?!
   We inherit box-sizing: border-box; from our <html> selector
@@ -35,12 +22,9 @@ p {
 }
 
 body {
-  /* background-size: 340px, auto; */
+  /* what is the following about? */
   min-height: calc(100vh - 100px);
-  /* margin: 50px; */
-  /* background: white; */
-  background-position: fixed;
-  letter-spacing: -1px;
+  /* letter-spacing: -1px; will this be necessary with the new font ??? */
 }
 
 h1,
@@ -51,7 +35,11 @@ h5,
 h6 {
   margin: 0 0 5px 0;
 }
-/* Each item in our grid will contain numbers */
+
+h2 {
+  font-size: 1em;
+}
+
 .tile {
   /* We center the contents of these items. You can also do this with flexbox too! */
   display: grid;
@@ -60,30 +48,29 @@ h6 {
   border: 5px solid rgba(0, 0, 0, 0.03);
   border-radius: 3px;
   font-size: 35px;
-  /* background-color: var(--yellow); /* best colour */
 }
 
 .tile p {
+  font-size: 18px;
   margin: 0 0 5px 0;
 }
 
-/* Imported from html file */
-h2 {
-  font-size: 1em;
-}
 .container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
 }
+
 .logo-tile {
   grid-column: 1 / -1;
   grid-row: 1 / 2;
   height: 120px
 }
+
 .nav-menu-tile {
   grid-column: 12 / 13;
   grid-row: 1 / 2;
 }
+
 .hero-tile {
   grid-column: 1 / 9;
   height: 480px;
@@ -92,17 +79,21 @@ h2 {
   background-size:cover;
   color: white;
 }
+
 .hero-tile h1 {
   font-size: 1.5em;
   align-self: end;
 }
+
 .info-tile {
   grid-column: 9 / -1;
   height: 480px;
 }
+
 .info-tile h2, .info-tile p {
   text-align: center;
 }
+
 .drinks-tile {
   grid-column: 1 / 4;
   height: 480px;
@@ -112,31 +103,39 @@ h2 {
   background-size:cover;
   background-position:center center;
   color: white;
+  /* testing out some css filters */
   opacity: 0.75;
   filter: contrast(200%);
 }
+
 .drinks-tile h2 {
   align-self: end;
 }
+
 .drinks-tile a {
   color: white;
 }
+
 .about-tile {
   grid-column: 4 / 10;
   height: 480px;
 }
+
 .about-tile p {
   padding: 2em;
 }
+
 .menus-tile {
   grid-column: 10 / -1;
   height: 480px;
   text-align: center;
 }
+
 .shop-tile {
   grid-column: 1 / -1;
   height: 480px;
 }
+
 .bar-tile {
   grid-column: 1 / 7;
   height: 480px;
@@ -146,6 +145,7 @@ h2 {
   background-position:center center;
   color: white;
 }
+
 .club-tile {
   grid-column: 7 / -1;
   height: 480px;
@@ -155,18 +155,22 @@ h2 {
   background-position:center center;
   color: white;
 }
+
 .gallery-tile {
   grid-column: 1 / -1;
   height: 480px;
 }
+
 .catering-tile {
   grid-column: 1 / 7;
   height: 480px;
 }
+
 .form-tile {
   grid-column: 7 / -1;
   height: 480px;
 }
+
 .footer {
   grid-column: 1 / -1;
   height: 80px;
