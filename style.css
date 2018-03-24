@@ -175,3 +175,63 @@ a:hover {
   grid-column: 1 / -1;
   height: 80px;
 }
+
+@media (max-width: 1080px) {
+  .about-tile {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    height: 480px;
+  }
+  .drinks-tile {
+    grid-column: 1 / 7;
+    grid-row: 4 / 5;
+  }
+  .menus-tile {
+    grid-column: 7 / -1;
+    grid-row: 4 / 5;
+  }
+}
+
+@media (max-width: 630px) {
+  .nav-menu-tile {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
+  .hero-tile {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+  }
+  .info-tile {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+  }
+  .about-tile {
+    height: auto;
+    grid-column: 1 / -1;
+    grid-row: 5 / 6;
+  }
+  .drinks-tile {
+    grid-column: 1 / -1;
+    grid-row: 6 / 7;
+  }
+  .menus-tile {
+    grid-column: 1 / -1;
+    grid-row: 7 / 8;
+  }
+  .bar-tile {
+    grid-column: 1 / -1;
+    grid-row: 9 / 10;
+  }
+  .club-tile {
+    grid-column: 1 / -1;
+    grid-row: 10 / 11;
+  }
+  .catering-tile {
+    grid-column: 1 / -1;
+    grid-row: 12 / 13;
+  }
+  .form-tile {
+    grid-column: 1 / -1;
+    grid-row: 13 / 14;
+  }
+}
