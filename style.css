@@ -134,6 +134,12 @@ a:hover {
 .shop-tile {
   grid-column: 1 / -1;
   height: 480px;
+  color: white;
+  text-align: center;
+  background: url("./assets/images/shop-bg.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center center;
 }
 
 .bar-tile {
