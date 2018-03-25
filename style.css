@@ -38,7 +38,7 @@ h6 {
 }
 
 h2 {
-  font-size: 1em;
+  font-size: 0.75em;
   text-transform: uppercase;
 }
 
@@ -133,6 +133,19 @@ a:hover {
   /* testing out some css filters */
   opacity: 0.75;
   filter: contrast(200%);
+}
+
+.drinks-tile h2,
+.menus-tile h2,
+.shop-tile h2,
+.bar-tile h2,
+.club-tile h2,
+.gallery-tile h2,
+.catering-tile h2
+{
+  border: solid 1px white;
+  border-radius: 5px;
+  padding: 1em;
 }
 
 .about-tile {
