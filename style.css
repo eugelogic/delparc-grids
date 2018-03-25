@@ -44,6 +44,7 @@ h2 {
 
 a {
   text-decoration: none;
+  color: #323232;
 }
 
 a:hover {
@@ -83,7 +84,7 @@ a:hover {
 
 .hero-tile {
   grid-column: 1 / 9;
-  height: 480px;
+  height: 510px;
   background-image: url("./assets/images/dummy.jpg");
   background-repeat:no-repeat;
   background-size:cover;
@@ -110,11 +111,15 @@ a:hover {
 
 .info-tile {
   grid-column: 9 / -1;
-  height: 480px;
+  height: 510px;
 }
 
 .info-tile h2, .info-tile p {
   text-align: center;
+}
+
+.info-tile a {
+  text-decoration: underline;
 }
 
 .drinks-tile {
