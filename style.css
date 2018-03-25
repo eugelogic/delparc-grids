@@ -91,8 +91,21 @@ a:hover {
 }
 
 .hero-tile h1 {
-  font-size: 1.5em;
+  font-size: 1em;
+  text-align: center;
   align-self: end;
+  padding-bottom: 0.5em;
+}
+
+.hero-tile h1 a {
+  color: white;
+  border: solid 1px white;
+  border-radius: 5px;
+  padding: 0.125em 0.5em;
+}
+
+.hero-tile h1 a:hover {
+  color: red;
 }
 
 .info-tile {
