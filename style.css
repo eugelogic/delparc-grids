@@ -85,7 +85,7 @@ a:hover {
 .hero-tile {
   grid-column: 1 / 9;
   height: 510px;
-  background-image: url("./assets/images/dummy.jpg");
+  background-image: url("./assets/images/dummy2.jpg");
   background-repeat:no-repeat;
   background-size:cover;
   color: white;
@@ -94,8 +94,7 @@ a:hover {
 .hero-tile h1 {
   font-size: 1em;
   text-align: center;
-  align-self: end;
-  padding-bottom: 0.5em;
+  align-self: center;
 }
 
 .hero-tile h1 a {
@@ -248,6 +247,10 @@ a:hover {
   .hero-tile {
     grid-column: 1 / -1;
     grid-row: 3 / 4;
+  }
+  .hero-tile h1 {
+    padding-top: 1em;
+    padding-bottom: 1em;
   }
   .info-tile {
     grid-column: 1 / -1;
