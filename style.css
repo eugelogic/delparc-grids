@@ -167,10 +167,11 @@ a:hover {
   height: 480px;
   color: white;
   text-align: center;
-  background: url("./assets/images/shop-bg.jpg");
+  background: url("./assets/images/shop-bg2.jpg");
   background-repeat:no-repeat;
   background-size:cover;
   background-position:center center;
+  margin-bottom: 10px;
 }
 
 .bar-tile {
