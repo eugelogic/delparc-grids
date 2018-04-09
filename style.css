@@ -37,6 +37,11 @@ h6 {
   margin: 0 0 5px 0;
 }
 
+.page-title-tile h1 {
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
 h2 {
   font-size: 0.75em;
   text-transform: uppercase;
@@ -82,6 +87,9 @@ a:hover {
   grid-row: 1 / 2;
 }
 
+/*--------------------------------------------------------------
+1.0 HOMEPAGE
+--------------------------------------------------------------*/
 .hero-tile {
   grid-column: 1 / 9;
   height: 510px;
@@ -285,4 +293,29 @@ a:hover {
     grid-column: 1 / -1;
     grid-row: 13 / 14;
   }
+}
+
+/*--------------------------------------------------------------
+2.0 MENU PAGE
+--------------------------------------------------------------*/
+.page-title-tile {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  height: 120px;
+  background-image: url("./assets/images/dummy2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: white;
+}
+
+.menu-tile {
+  grid-column: 1 / -1;
+  grid-row: 3 / 4;
+}
+
+.menu-tile ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
 }
