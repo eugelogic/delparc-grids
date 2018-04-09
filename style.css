@@ -53,7 +53,7 @@ a {
 }
 
 a:hover {
-  color: red;
+  color: #E5C100;
 }
 
 .tile {
@@ -117,7 +117,8 @@ a:hover {
 }
 
 .hero-tile h1 a:hover {
-  color: red;
+  color: #E5C100;
+  border: solid 1px #E5C100;
 }
 
 .info-tile {
