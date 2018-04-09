@@ -82,6 +82,10 @@ a:hover {
   height: 120px
 }
 
+.logo-tile a {
+  height: 60px
+}
+
 .nav-menu-tile {
   grid-column: 12 / 13;
   grid-row: 1 / 2;
