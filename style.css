@@ -153,11 +153,26 @@ a:hover {
 .bar-tile h2,
 .club-tile h2,
 .gallery-tile h2,
-.catering-tile h2
+.catering-tile h2,
+.contact-tile h2
 {
+  color: white;
   border: solid 1px white;
   border-radius: 5px;
   padding: 1em;
+}
+
+.drinks-tile a:hover h2,
+.menus-tile a:hover h2,
+.shop-tile a:hover h2,
+.bar-tile a:hover h2,
+.club-tile a:hover h2,
+.gallery-tile a:hover h2,
+.catering-tile a:hover h2,
+.contact-tile a:hover h2
+{
+  color: #E5C100;
+  border: solid 1px #E5C100;
 }
 
 .about-tile {
@@ -217,7 +232,7 @@ a:hover {
   height: 480px;
 }
 
-.form-tile {
+.contact-tile {
   grid-column: 7 / -1;
   height: 480px;
 }
@@ -294,7 +309,7 @@ a:hover {
     grid-column: 1 / -1;
     grid-row: 12 / 13;
   }
-  .form-tile {
+  .contact-tile {
     grid-column: 1 / -1;
     grid-row: 13 / 14;
   }
