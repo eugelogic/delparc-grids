@@ -97,7 +97,7 @@ a:hover {
 .hero-tile {
   grid-column: 1 / 9;
   height: 510px;
-  background-image: url("./assets/images/dummy2.jpg");
+  background-image: url("./assets/images/dummy-storefront.jpg");
   background-repeat:no-repeat;
   background-size:cover;
   color: white;
@@ -142,9 +142,6 @@ a:hover {
   background-repeat:no-repeat;
   background-size:cover;
   background-position:center center;
-  /* testing out some css filters */
-  opacity: 0.75;
-  filter: contrast(200%);
 }
 
 .drinks-tile h2,
@@ -188,6 +185,10 @@ a:hover {
   grid-column: 10 / -1;
   height: auto;
   text-align: center;
+  background: url("./assets/images/menus.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center center;
 }
 
 .shop-tile {
@@ -195,7 +196,7 @@ a:hover {
   height: 480px;
   color: white;
   text-align: center;
-  background: url("./assets/images/shop-bg2.jpg");
+  background: url("./assets/images/shop-bg.jpg");
   background-repeat:no-repeat;
   background-size:cover;
   background-position:center center;
@@ -215,7 +216,7 @@ a:hover {
 .club-tile {
   grid-column: 7 / -1;
   height: 480px;
-  background: url("./assets/images/supperclub.jpg");
+  background: url("./assets/images/supper-club.jpg");
   background-repeat:no-repeat;
   background-size:cover;
   background-position:center center;
@@ -322,7 +323,7 @@ a:hover {
   grid-column: 1 / -1;
   grid-row: 2 / 3;
   height: 120px;
-  background-image: url("./assets/images/dummy2.jpg");
+  background-image: url("./assets/images/dummy-storefront.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
