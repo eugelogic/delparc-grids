@@ -76,6 +76,11 @@ a:hover {
   grid-template-columns: repeat(12, 1fr);
 }
 
+.nav-menu-tile {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
 .logo-tile {
   grid-column: 1 / -1;
   grid-row: 1 / 2;
@@ -86,11 +91,16 @@ a:hover {
   height: 60px
 }
 
-.nav-menu-tile {
-  grid-column: 1 / 2;
+.social-media-tile {
+  grid-column: 10 / 13;
   grid-row: 1 / 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.social-media-tile a {
+  text-align: center;
+}
 /*--------------------------------------------------------------
 1.0 HOMEPAGE
 --------------------------------------------------------------*/
@@ -269,9 +279,13 @@ a:hover {
    }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 930px) { /* Tablet resolution */
   .nav-menu-tile {
-    grid-column: 1 / -1;
+    grid-column: 1 / 7;
+    grid-row: 2 / 3;
+  }
+  .social-media-tile {
+    grid-column: 7 / -1;
     grid-row: 2 / 3;
   }
   .hero-tile {
@@ -283,36 +297,103 @@ a:hover {
     padding-bottom: 1em;
   }
   .info-tile {
-    grid-column: 1 / -1;
+    grid-column: 1 / 7;
     grid-row: 4 / 5;
   }
   .about-tile {
-    grid-column: 1 / -1;
-    grid-row: 5 / 6;
+    grid-column: 7 / -1;
+    grid-row: 4 / 5;
   }
   .drinks-tile {
-    grid-column: 1 / -1;
-    grid-row: 6 / 7;
+    grid-column: 1 / 7;
+    grid-row: 5 / 6;
   }
   .menus-tile {
+    grid-column: 7 / -1;
+    grid-row: 5 / 6;
+  }
+  .shop-tile {
     grid-column: 1 / -1;
     grid-row: 7 / 8;
   }
   .bar-tile {
+    grid-column: 1 / 7;
+    grid-row: 8 / 9;
+  }
+  .club-tile {
+    grid-column: 7 / -1;
+    grid-row: 8 / 9;
+  }
+  .gallery-tile {
     grid-column: 1 / -1;
     grid-row: 9 / 10;
   }
-  .club-tile {
+  .catering-tile {
+    grid-column: 1 / 7;
+    grid-row: 10 / 11;
+  }
+  .contact-tile {
+    grid-column: 7 / -1;
+    grid-row: 11 / 12;
+  }
+}
+
+@media (max-width: 630px) { /* Mobile resolution */
+  .nav-menu-tile {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
+  .social-media-tile {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+  }
+  .hero-tile {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+  }
+  .hero-tile h1 {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .info-tile {
+    grid-column: 1 / -1;
+    grid-row: 5 / 6;
+  }
+  .about-tile {
+    grid-column: 1 / -1;
+    grid-row: 6 / 7;
+  }
+  .drinks-tile {
+    grid-column: 1 / -1;
+    grid-row: 7 / 8;
+  }
+  .menus-tile {
+    grid-column: 1 / -1;
+    grid-row: 8 / 9;
+  }
+  .shop-tile {
+    grid-column: 1 / -1;
+    grid-row: 9 / 10;
+  }
+  .bar-tile {
     grid-column: 1 / -1;
     grid-row: 10 / 11;
   }
-  .catering-tile {
+  .club-tile {
+    grid-column: 1 / -1;
+    grid-row: 11 / 12;
+  }
+  .gallery-tile {
     grid-column: 1 / -1;
     grid-row: 12 / 13;
   }
-  .contact-tile {
+  .catering-tile {
     grid-column: 1 / -1;
     grid-row: 13 / 14;
+  }
+  .contact-tile {
+    grid-column: 1 / -1;
+    grid-row: 14 / 15;
   }
 }
 
