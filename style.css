@@ -156,11 +156,11 @@ a:hover {
   text-decoration: underline;
 }
 
-.drinks-tile {
+.hp-food-menus-tile {
   grid-column: 1 / 4;
   height: auto;
   text-align: center;
-  background: url("./assets/images/drinks.jpg");
+  background: url("./assets/images/menus.jpg");
   background-repeat:no-repeat;
   background-size:cover;
   background-position:center center;
@@ -203,11 +203,11 @@ a:hover {
   padding: 2em;
 }
 
-.hp-food-menus-tile {
+.drinks-tile {
   grid-column: 10 / -1;
   height: auto;
   text-align: center;
-  background: url("./assets/images/menus.jpg");
+  background: url("./assets/images/drinks.jpg");
   background-repeat:no-repeat;
   background-size:cover;
   background-position:center center;
@@ -316,12 +316,12 @@ a:hover {
     grid-column: 1 / -1;
     grid-row: 3 / 4;
   }
-  .drinks-tile {
+  .hp-food-menus-tile {
     grid-column: 1 / 7;
     grid-row: 4 / 5;
     height: 240px;
   }
-  .hp-food-menus-tile {
+  .drinks-tile {
     grid-column: 7 / -1;
     grid-row: 4 / 5;
     height: 240px;
@@ -348,6 +348,10 @@ a:hover {
     grid-column: 1 / -1;
     grid-row: 3 / 4;
   }
+  .footer {
+    grid-column: 1 / -1;
+    grid-row: 11 / 12;
+  }
   /* HOMEPAGE */
   .hero-tile {
     grid-column: 1 / -1;
@@ -365,11 +369,11 @@ a:hover {
     grid-column: 7 / -1;
     grid-row: 4 / 5;
   }
-  .drinks-tile {
+  .hp-food-menus-tile {
     grid-column: 1 / 7;
     grid-row: 5 / 6;
   }
-  .hp-food-menus-tile {
+  .drinks-tile {
     grid-column: 7 / -1;
     grid-row: 5 / 6;
   }
@@ -395,7 +399,7 @@ a:hover {
   }
   .contact-tile {
     grid-column: 7 / -1;
-    grid-row: 11 / 12;
+    grid-row: 10 / 11;
   }
   /* FOOD MENUS PAGE */
   .food-menus-tile {
@@ -424,6 +428,10 @@ a:hover {
     grid-column: 1 / -1;
     grid-row: 4 / 5;
   }
+  .footer {
+    grid-column: 1 / -1;
+    grid-row: 15 / 16;
+  }
   /* HOMEPAGE */
   .hero-tile {
     grid-column: 1 / -1;
@@ -441,11 +449,11 @@ a:hover {
     grid-column: 1 / -1;
     grid-row: 6 / 7;
   }
-  .drinks-tile {
+  .hp-food-menus-tile {
     grid-column: 1 / -1;
     grid-row: 7 / 8;
   }
-  .hp-food-menus-tile {
+  .drinks-tile {
     grid-column: 1 / -1;
     grid-row: 8 / 9;
   }
