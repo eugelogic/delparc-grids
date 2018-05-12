@@ -266,7 +266,7 @@ a:hover {
 }
 
 /*--------------------------------------------------------------
-2.0 MENU PAGE
+2.0 MAIN NAVIGATION MENU PAGE
 --------------------------------------------------------------*/
 .menu-tile {
   grid-column: 1 / -1;
@@ -401,6 +401,11 @@ a:hover {
     grid-column: 7 / -1;
     grid-row: 10 / 11;
   }
+  /* MAIN NAVIGATION MENU PAGE */
+  .menu-tile {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+  }
   /* FOOD MENUS PAGE */
   .food-menus-tile {
     grid-column: 1 / -1;
@@ -480,6 +485,11 @@ a:hover {
   .contact-tile {
     grid-column: 1 / -1;
     grid-row: 14 / 15;
+  }
+  /* MAIN NAVIGATION MENU PAGE */
+  .menu-tile {
+    grid-column: 1 / -1;
+    grid-row: 5 / 6;
   }
   /* FOOD MENUS PAGE */
   .food-menus-tile {
