@@ -87,7 +87,7 @@ a:hover {
 }
 
 .nav-menu-tile {
-  grid-column: 12 / 13;
+  grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
 
