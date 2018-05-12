@@ -96,10 +96,22 @@ a:hover {
   grid-row: 1 / 2;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-size: 30px;
 }
 
 .social-media-tile a {
   text-align: center;
+}
+
+.page-title-tile {
+  grid-column: 1 / -1;
+  grid-row: 2 / 3;
+  height: 120px;
+  background-image: url("./assets/images/dummy-storefront.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  color: white;
 }
 /*--------------------------------------------------------------
 1.0 HOMEPAGE
@@ -155,7 +167,7 @@ a:hover {
 }
 
 .drinks-tile h2,
-.menus-tile h2,
+.hp-food-menus-tile h2,
 .shop-tile h2,
 .bar-tile h2,
 .club-tile h2,
@@ -170,7 +182,7 @@ a:hover {
 }
 
 .drinks-tile a:hover h2,
-.menus-tile a:hover h2,
+.hp-food-menus-tile a:hover h2,
 .shop-tile a:hover h2,
 .bar-tile a:hover h2,
 .club-tile a:hover h2,
@@ -191,7 +203,7 @@ a:hover {
   padding: 2em;
 }
 
-.menus-tile {
+.hp-food-menus-tile {
   grid-column: 10 / -1;
   height: auto;
   text-align: center;
@@ -253,6 +265,48 @@ a:hover {
   height: 80px;
 }
 
+/*--------------------------------------------------------------
+2.0 MENU PAGE
+--------------------------------------------------------------*/
+.menu-tile {
+  grid-column: 1 / -1;
+  grid-row: 3 / 4;
+}
+.menu-tile ul {
+  list-style-type: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+3.0 FOOD MENUS PAGE
+--------------------------------------------------------------*/
+.food-menus-tile {
+  grid-column: 1 / -1;
+  grid-row: 3 / 4;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.food-menus-tile h2 {
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+4.0 SIMPLE TAPAS PAGE
+--------------------------------------------------------------*/
+.simple-tapas-tile {
+  grid-column: 1 / -1;
+  grid-row: 3 / 4;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.simple-tapas-tile p {
+  text-align: center;
+}
+
+/*--------------------------------------------------------------
+?.0 MEDIA QUERIES
+--------------------------------------------------------------*/
 @media (max-width: 1080px) {
   .hero-tile,
   .info-tile {
@@ -267,7 +321,7 @@ a:hover {
     grid-row: 4 / 5;
     height: 240px;
   }
-  .menus-tile {
+  .hp-food-menus-tile {
     grid-column: 7 / -1;
     grid-row: 4 / 5;
     height: 240px;
@@ -279,7 +333,9 @@ a:hover {
    }
 }
 
-@media (max-width: 930px) { /* Tablet resolution */
+/* Tablet resolution */
+@media (max-width: 930px) {
+  /* GLOBAL */
   .nav-menu-tile {
     grid-column: 1 / 7;
     grid-row: 2 / 3;
@@ -288,6 +344,11 @@ a:hover {
     grid-column: 7 / -1;
     grid-row: 2 / 3;
   }
+  .page-title-tile {
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+  }
+  /* HOMEPAGE */
   .hero-tile {
     grid-column: 1 / -1;
     grid-row: 3 / 4;
@@ -308,7 +369,7 @@ a:hover {
     grid-column: 1 / 7;
     grid-row: 5 / 6;
   }
-  .menus-tile {
+  .hp-food-menus-tile {
     grid-column: 7 / -1;
     grid-row: 5 / 6;
   }
@@ -336,9 +397,21 @@ a:hover {
     grid-column: 7 / -1;
     grid-row: 11 / 12;
   }
+  /* FOOD MENUS PAGE */
+  .food-menus-tile {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+  }
+  /* SIMPLE TAPAS PAGE */
+  .simple-tapas-tile {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+  }
 }
 
-@media (max-width: 630px) { /* Mobile resolution */
+/* Mobile resolution */
+@media (max-width: 630px) {
+  /* GLOBAL */
   .nav-menu-tile {
     grid-column: 1 / -1;
     grid-row: 2 / 3;
@@ -347,6 +420,11 @@ a:hover {
     grid-column: 1 / -1;
     grid-row: 3 / 4;
   }
+  .page-title-tile {
+    grid-column: 1 / -1;
+    grid-row: 4 / 5;
+  }
+  /* HOMEPAGE */
   .hero-tile {
     grid-column: 1 / -1;
     grid-row: 4 / 5;
@@ -367,7 +445,7 @@ a:hover {
     grid-column: 1 / -1;
     grid-row: 7 / 8;
   }
-  .menus-tile {
+  .hp-food-menus-tile {
     grid-column: 1 / -1;
     grid-row: 8 / 9;
   }
@@ -395,29 +473,14 @@ a:hover {
     grid-column: 1 / -1;
     grid-row: 14 / 15;
   }
-}
-
-/*--------------------------------------------------------------
-2.0 MENU PAGE
---------------------------------------------------------------*/
-.page-title-tile {
-  grid-column: 1 / -1;
-  grid-row: 2 / 3;
-  height: 120px;
-  background-image: url("./assets/images/dummy-storefront.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  color: white;
-}
-
-.menu-tile {
-  grid-column: 1 / -1;
-  grid-row: 3 / 4;
-}
-
-.menu-tile ul {
-  list-style-type: none;
-  padding-left: 0;
-  text-align: center;
+  /* FOOD MENUS PAGE */
+  .food-menus-tile {
+    grid-column: 1 / -1;
+    grid-row: 5 / 6;
+  }
+  /* SIMPLE TAPAS PAGE */
+  .simple-tapas-tile {
+    grid-column: 1 / -1;
+    grid-row: 5 / 6;
+  }
 }
