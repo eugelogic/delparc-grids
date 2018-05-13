@@ -66,7 +66,7 @@ a:hover {
   display: grid;
   justify-content: center;
   align-items: center;
-  border: 5px solid rgba(0, 0, 0, 0.03);
+  border: 5px solid rgba(0, 0, 0, 0.01);
   border-radius: 3px;
   font-size: 35px;
 }
@@ -169,6 +169,7 @@ a:hover {
   background-repeat:no-repeat;
   background-size:cover;
   background-position:center center;
+  margin-left: 5px;
 }
 
 .drinks-tile h2,
@@ -210,6 +211,7 @@ a:hover {
   background-repeat:no-repeat;
   background-size:cover;
   background-position:center center;
+  margin-right: 5px;
 }
 
 .shop-tile {
@@ -221,7 +223,7 @@ a:hover {
   background-repeat:no-repeat;
   background-size:cover;
   background-position:center center;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .bar-tile {
@@ -308,11 +310,16 @@ a:hover {
     grid-column: 1 / 7;
     grid-row: 4 / 5;
     height: 240px;
+    margin-left: 0;
   }
   .drinks-tile {
     grid-column: 7 / -1;
     grid-row: 4 / 5;
     height: 240px;
+    margin-right: 0;
+  }
+  .shop-tile {
+    margin-top: 5px;
   }
   .bar-tile,
   .club-tile
@@ -368,6 +375,8 @@ a:hover {
   .shop-tile {
     grid-column: 1 / -1;
     grid-row: 7 / 8;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   .bar-tile {
     grid-column: 1 / 7;
@@ -433,6 +442,7 @@ a:hover {
   .hp-food-menus-tile {
     grid-column: 1 / -1;
     grid-row: 7 / 8;
+    margin-bottom: 10px;
   }
   .drinks-tile {
     grid-column: 1 / -1;
@@ -445,6 +455,7 @@ a:hover {
   .bar-tile {
     grid-column: 1 / -1;
     grid-row: 10 / 11;
+    margin-bottom: 10px;
   }
   .club-tile {
     grid-column: 1 / -1;
