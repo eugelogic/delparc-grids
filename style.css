@@ -47,6 +47,11 @@ h2 {
   text-transform: uppercase;
 }
 
+h3 {
+  font-size: 0.5em;
+  text-transform: uppercase;
+}
+
 a {
   text-decoration: none;
   color: #323232;
@@ -281,6 +286,10 @@ a:hover {
 }
 .simple-tapas-tile p {
   text-align: center;
+}
+.simple-tapas-tile h3 {
+  text-align: center;
+  text-decoration: underline;
 }
 
 /*--------------------------------------------------------------
