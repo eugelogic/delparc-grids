@@ -170,10 +170,7 @@ a:hover {
 .hp-food-menus-tile h2,
 .shop-tile h2,
 .bar-tile h2,
-.club-tile h2,
-.gallery-tile h2,
-.catering-tile h2,
-.contact-tile h2
+.club-tile h2
 {
   color: white;
   border: solid 1px white;
@@ -185,10 +182,7 @@ a:hover {
 .hp-food-menus-tile a:hover h2,
 .shop-tile a:hover h2,
 .bar-tile a:hover h2,
-.club-tile a:hover h2,
-.gallery-tile a:hover h2,
-.catering-tile a:hover h2,
-.contact-tile a:hover h2
+.club-tile a:hover h2
 {
   color: #E5C100;
   border: solid 1px #E5C100;
@@ -243,21 +237,6 @@ a:hover {
   background-size:cover;
   background-position:center center;
   color: white;
-}
-
-.gallery-tile {
-  grid-column: 1 / -1;
-  height: 480px;
-}
-
-.catering-tile {
-  grid-column: 1 / 7;
-  height: 480px;
-}
-
-.contact-tile {
-  grid-column: 7 / -1;
-  height: 480px;
 }
 
 .footer {
@@ -350,7 +329,7 @@ a:hover {
   }
   .footer {
     grid-column: 1 / -1;
-    grid-row: 11 / 12;
+    grid-row: 9 / 10;
   }
   /* HOMEPAGE */
   .hero-tile {
@@ -389,18 +368,6 @@ a:hover {
     grid-column: 7 / -1;
     grid-row: 8 / 9;
   }
-  .gallery-tile {
-    grid-column: 1 / -1;
-    grid-row: 9 / 10;
-  }
-  .catering-tile {
-    grid-column: 1 / 7;
-    grid-row: 10 / 11;
-  }
-  .contact-tile {
-    grid-column: 7 / -1;
-    grid-row: 10 / 11;
-  }
   /* MAIN NAVIGATION MENU PAGE */
   .menu-tile {
     grid-column: 1 / -1;
@@ -435,7 +402,7 @@ a:hover {
   }
   .footer {
     grid-column: 1 / -1;
-    grid-row: 15 / 16;
+    grid-row: 12 / 13;
   }
   /* HOMEPAGE */
   .hero-tile {
@@ -473,18 +440,6 @@ a:hover {
   .club-tile {
     grid-column: 1 / -1;
     grid-row: 11 / 12;
-  }
-  .gallery-tile {
-    grid-column: 1 / -1;
-    grid-row: 12 / 13;
-  }
-  .catering-tile {
-    grid-column: 1 / -1;
-    grid-row: 13 / 14;
-  }
-  .contact-tile {
-    grid-column: 1 / -1;
-    grid-row: 14 / 15;
   }
   /* MAIN NAVIGATION MENU PAGE */
   .menu-tile {
